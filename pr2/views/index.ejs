@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image upload</title>
+
+</head>
+<body>
+    <div>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="imageUpload" >upload image</label>
+            <input type="file" id="imageUpload" name="file" accept="image/*" required>
+            <button type="submit">upload</button>
+        </form>
+        <div id="uploaded-image-container">
+            <% if(url) {%>
+                <h2>Uploaded Image:</h2>
+                <img src="<%= url %>" alt="Uploaded Image" style="max-width: 300px; max-height: 300px;">
+            <% } %>
+
+        </div>
+    </div>
+    
+</body>
+</html>

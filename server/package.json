@@ -1,17 +1,16 @@
 {
-  "name": "hello",
+  "name": "server",
   "version": "1.0.0",
-  "main": "app.js",
-  "type": "module",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node server.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "keywords": [],
   "description": "",
   "dependencies": {
-    "react-router-dom": "^7.9.6"
+    "express": "^5.1.0"
   }
 }
